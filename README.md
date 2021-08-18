@@ -2,8 +2,8 @@
 
 #Wireframe
 
-![Wireframe]src/images/Book-5-Assessment Wireframe.png
+src/images/Book-5-Assessment Wireframe.png
 
 #ERD 
 
-![ERD]src/images/Book 5 Assessment ERD.png
+src/images/Book 5 Assessment ERD.png
