@@ -6,3 +6,14 @@
     //Define exportable getter to let other modules use the app state
     //Define exportable sender function (fetch using post method).  Should trigger a statechanged custom event to rerender.
     //Define exportable delete function (fetch using delete method).  Should trigger a statechanged custom event to rerender.
+
+
+    const applicationState = {
+        penPals: [],
+        letters:[],
+        topics: []
+    }
+
+    const mainContainer = document.querySelector("#container")
+
+    const API = "http://localhost:8088"  
