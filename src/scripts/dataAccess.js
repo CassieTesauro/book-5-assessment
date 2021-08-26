@@ -17,3 +17,21 @@
     const mainContainer = document.querySelector("#container")
 
     const API = "http://localhost:8088"  
+
+
+    //fetches penpal state from API and stores it locally
+    export const fetchPenPals = () => {
+        return fetch(`${API}/penPals`)
+        .then(response => response.json())
+        .then(
+            (fetchedAPIPenPals) => {
+                applicationState.penPals = fetchedAPIPenPals
+            }
+        )    
+    }
+
+    //makes a copy of the penpal local state to be used in other modules
+    export const getPenPals = () => {
+        return applicationState.penPals.map(penPal => ({...penPal}))  
+    }
+    

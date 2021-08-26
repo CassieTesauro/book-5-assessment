@@ -1,6 +1,7 @@
 //MODULE RESPONSIBILITIES:
     //Define ProjectName() function to return basic site HTML.  This HTML will inclide function calls for differenct sections of the site. 
     //Import those function calls from the pages they are defined on.
+import { authorSelect } from "./author.js"
 
     export const PenPalSociety = () => {  
         return `
@@ -8,6 +9,7 @@
     
             <section class="authorNames">
                <h3>Authors</h3>
+               ${authorSelect()}
                
             </section>  
     
