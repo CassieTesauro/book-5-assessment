@@ -2,6 +2,8 @@
     //Define ProjectName() function to return basic site HTML.  This HTML will inclide function calls for differenct sections of the site. 
     //Import those function calls from the pages they are defined on.
 import { authorSelect } from "./author.js"
+import { recipientSelect } from "./recipients.js"
+
 
     export const PenPalSociety = () => {  
         return `
@@ -25,6 +27,7 @@ import { authorSelect } from "./author.js"
 
             <section class="recipientNames">
                 <h3>Recipient</h3>
+                ${recipientSelect()}
                
             </section>
 

@@ -11,7 +11,8 @@
     const applicationState = {
         penPals: [],
         letters:[],
-        topics: []
+        topics: [],
+        letterDraft: {}
     }
 
     const mainContainer = document.querySelector("#container")
