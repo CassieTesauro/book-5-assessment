@@ -3,6 +3,7 @@
     //Import those function calls from the pages they are defined on.
 import { authorSelect } from "./author.js"
 import { recipientSelect } from "./recipients.js"
+import { topicSelect } from "./topic.js"
 
 
     export const PenPalSociety = () => {  
@@ -22,7 +23,7 @@ import { recipientSelect } from "./recipients.js"
 
             <section class="topics">
                 <h3>Topics</h3>
-               
+                ${topicSelect()}
             </section>
 
             <section class="recipientNames">
