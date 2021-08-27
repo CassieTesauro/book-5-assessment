@@ -35,4 +35,22 @@
     export const getPenPals = () => {
         return applicationState.penPals.map(penPal => ({...penPal}))  
     }
+
+
+
+    //fetches topic state from API and stores it locally
+    export const fetchTopics = () => {
+        return fetch(`${API}/topics`)
+        .then(response => response.json())
+        .then(
+            (fetchedAPITopics) => {
+                applicationState.topics = fetchedAPITopics
+            }
+        )    
+    }
+
+    //makes a copy of the topic local state to be used in other modules
+    export const getTopics = () => {
+        return applicationState.topics.map(topic => ({...topic}))  
+    }
     
