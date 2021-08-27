@@ -2,6 +2,7 @@
     //Define ProjectName() function to return basic site HTML.  This HTML will inclide function calls for differenct sections of the site. 
     //Import those function calls from the pages they are defined on.
 import { authorSelect } from "./author.js"
+import { letterText } from "./LetterText.js"
 import { recipientSelect } from "./recipients.js"
 import { topicSelect } from "./topic.js"
 
@@ -18,6 +19,7 @@ import { topicSelect } from "./topic.js"
     
             <section class="letterText">
                 <h3>Letter</h3>
+                ${letterText()}
                
             </section>
 
